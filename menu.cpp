@@ -2,6 +2,7 @@
 #include <conio.h>
 using namespace std;
 
+int n;
 void dMenu() {
     system("cls");
     cout << "Aplikasi Sorting Bubble\n";
@@ -13,10 +14,9 @@ void dMenu() {
     cout << "Masukkan angka : ";
 }
 
-void mMasukkanData() {
+void mPertama(string pesan){
     system("cls");
-    cout << "Menu Masukkan Data\n";
-    // Tambahkan logika input data di sini
+    cout<<"hallo saya menu "<<pesan;
     getch();
 }
 
