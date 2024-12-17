@@ -20,56 +20,52 @@ void mPertama(string pesan){
     getch();
 }
 
-void mTampilkanData() {
-    system("cls");
-    cout << "Menu Tampilkan Data\n";
-    // Tambahkan logika untuk menampilkan data di sini
-    getch();
+void tukar(int *a, int *b) {
+  int t = *a;
+  *a = *b;
+  *b = t;
 }
 
-void mSortingAsc() {
-    system("cls");
-    cout << "Menu Sorting Ascending\n";
-    // Tambahkan logika sorting ascending di sini
-    getch();
-}
 
-void mSortingDesc() {
-    system("cls");
-    cout << "Menu Sorting Descending\n";
-    // Tambahkan logika sorting descending di sini
-    getch();
+
+void tampilkan() {
 }
 
 int main() {
-    char pl;
-    do {
-        dMenu();
-        pl = getch();
-        switch (pl) {
-            case '1':
-                mMasukkanData();
-                break;
-            case '2':
-                mTampilkanData();
-                break;
-            case '3':
-                mSortingAsc();
-                break;
-            case '4':
-                mSortingDesc();
-                break;
-            case '5':
-                system("cls");
-                cout << "Keluar dari program.\n";
-                getch();
-                break;
-            default:
-                system("cls");
-                cout << "Pilihan Tidak Tersedia\n";
-                getch();
-                break;
-        }
-    } while (pl != '5');
+char pl;
+int data[100]; 
+do {
+    dMenu();
+    pl = getch();
+switch (pl) {
+    case '1':
+        /* code */
+        cin>>n;
+        for(int i = 0; i <= n; i++) {
+}
+    break;
+    case '2':
+        mPertama("ke- dua");
+        /* code */ 
+    break;  
+    case '3':
+        mPertama("ke- tiga");
+        /* code */
+    break;  
+    case '4':
+        mPertama("ke- empat");
+        /* code */
+    break;  
+    case '5':
+        /* code */
+    break;
+    
+    default:
+    system("cls");
+    cout<<"Pilihan Tidak Tersedia";
+    getch();
+    break;
+    }
+} while (pl!='5');
     return 0;
 }
