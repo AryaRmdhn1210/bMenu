@@ -26,9 +26,16 @@ void tukar(int *a, int *b) {
   *b = t;
 }
 
+void tampilArray() {
+    //
+}
 
+void tampilAsc() {
+    //
+}
 
-void tampilkan() {
+void tampilDsc() {
+    //
 }
 
 int main() {
@@ -40,12 +47,16 @@ do {
 switch (pl) {
     case '1':
         /* code */
+        system("cls");
+        cout<<"Masukkan panjang data : ";
         cin>>n;
         for(int i = 0; i <= n; i++) {
-}
+            cout << "Masukkan Data ke ["<< i <<"] : ";
+            cin >> data[i];    
+        }
+        getch();
     break;
     case '2':
-        mPertama("ke- dua");
         /* code */ 
     break;  
     case '3':
@@ -59,7 +70,6 @@ switch (pl) {
     case '5':
         /* code */
     break;
-    
     default:
     system("cls");
     cout<<"Pilihan Tidak Tersedia";
